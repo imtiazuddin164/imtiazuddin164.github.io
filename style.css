@@ -1,0 +1,287 @@
+/* ------------------------------
+   General Styles
+------------------------------ */
+body {
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+  background-color: #0f172a;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+.section {
+  padding: 80px 0;
+  position: relative;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+  position: relative;
+  display: inline-block;
+}
+
+.section-title::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #0dcaf0;
+  margin: 10px auto 0;
+  border-radius: 5px;
+}
+
+/* ------------------------------
+   Navbar
+------------------------------ */
+.navbar {
+  background-color: rgba(15, 23, 42, 0.95) !important;
+  backdrop-filter: blur(10px);
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  color: #0dcaf0 !important;
+}
+
+.nav-link {
+  color: #e2e8f0 !important;
+  margin-left: 15px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #0dcaf0 !important;
+}
+
+/* ------------------------------
+   Hero Section
+------------------------------ */
+.hero-section {
+  background: linear-gradient(to bottom right, #0f172a, #1e293b); 
+  text-align: center;
+}
+
+.home-photo {
+	margin-right: 120px;
+}
+.home-photo img {
+  width: 180px;
+  height: 190px;
+  border-radius:5%;
+  border: 1px;			/*solid #0dcaf0*/
+  object-fit: cover;
+  margin-bottom: 0px;
+  box-shadow: 0 0 25px rgba(13, 202, 240, 0.3);
+}
+
+.hero-section h1 {
+  font-size: 2.8rem;
+}
+
+.hero-section p {
+  font-size: 1.2rem;
+  color: #cbd5e1;
+}
+
+.btn-info {
+  border-radius: 30px;
+  font-weight: 600;
+  padding: 10px 25px;
+  transition: 0.3s;
+  color: #FAF5F5;
+}
+
+.btn-info:hover {
+  /*background-color: #0bb7dd;*/
+  background-color: #0bb7dd;
+  transform: translateY(-3px);
+}
+
+/* ------------------------------
+   About Section
+------------------------------ */
+#about {
+  background-color: #f8fafc;
+  color: #1e293b;
+}
+
+#about p {
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.8;
+  font-size: 1.1rem;
+}
+
+/* ------------------------------
+   Skills Section
+------------------------------ */
+#skills {
+  background-color: #1e293b;
+}
+
+.skill-card {
+  background-color: #0f172a;
+  color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px rgba(13, 202, 240, 0.1);
+}
+
+.skill-card:hover {
+  background-color: #0dcaf0;
+  color: #0f172a;
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(13, 202, 240, 0.4);
+}
+
+/* ------------------------------
+   Projects Section
+------------------------------ */
+#projects {
+  background-color: #f8fafc;
+  color: #1e293b;
+}
+
+.project-card {
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  background-color: #fff;
+}
+
+.project-card img {
+  border-radius: 10px;
+  height: 200px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.project-card .card-body {
+  padding: 15px;
+}
+
+.see-more {
+  color: #0dcaf0;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.see-more:hover {
+  text-decoration: underline;
+}
+
+
+/* ------------------------------
+   Experience Section
+------------------------------ */
+#experience {
+  background: linear-gradient(to right, #0f172a, #1e293b);
+  color: #e2e8f0;
+}
+
+/* ------------------------------
+   Education Section
+------------------------------ */
+#education {
+  background-color: #f8fafc;
+  color: #1e293b;
+}
+
+#education p {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+/* ------------------------------
+   Contact Section
+------------------------------ */
+#contact {
+  background-color: #1e293b;
+}
+
+#contact a {
+  color: #0dcaf0;
+  text-decoration: none;
+  font-size: 1.5rem;
+  transition: 0.3s;
+}
+
+#contact a:hover {
+  color: #fff;
+  transform: scale(1.1);
+}
+
+#contact p {
+  font-size: 1.1rem;
+}
+
+/* ------------------------------
+   Footer
+------------------------------ */
+footer {
+  background-color: #0f172a;
+  color: #94a3b8;
+  font-size: 0.95rem;
+}
+
+/* ------------------------------
+   Animations
+------------------------------ */
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-up {
+  animation: fadeUp 1s ease-out forwards;
+}
+
+.delay-1s {
+  animation-delay: 0.5s;
+}
+
+/* ------------------------------
+   Responsive Design
+------------------------------ */
+@media (max-width: 768px) {
+  .hero-section h1 {
+    font-size: 2.2rem;
+  }
+  .hero-section p {
+    font-size: 1rem;
+  }
+  .section {
+    padding: 60px 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar-brand {
+    font-size: 1.3rem;
+  }
+  .skill-card {
+    padding: 15px;
+  }
+  .project-card img {
+    height: 160px;
+  }
+}
